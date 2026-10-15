@@ -15,4 +15,5 @@ COPY . .
 ENV PORT=8080
 EXPOSE 8080
 
-CMD ["uvicorn", "main:main", "--host", "0.0.0.0", "--port", "8080"]
+# 'main:main'을 'main:app' (또는 실제 파일명과 변수명)으로 변경
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8080"]
